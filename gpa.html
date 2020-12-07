@@ -1,0 +1,209 @@
+<html> 
+<head> <meta charset="utf-8"> <link rel="stylesheet" type="text/css" href="styles.css">  <title>GPA CALCULATOR </title> 
+<script type="text/javascript"> 
+function calculate() 
+{ 
+var x=document.getElementById("result1").innerText; 
+var y=document.getElementById("result2").innerText; 
+var z=document.getElementById("result3").innerText; 
+var a=document.getElementById("result4").innerText; 
+var result1=parseFloat(x) + parseFloat(y) + parseFloat(z) + parseFloat(a);  var result5=x%y; 
+var html="<p>Your overall GPA is: "+result1/4+"</p>";  
+document.getElementById("total").innerHTML=html; 
+} 
+</script>
+<style> 
+body{ 
+text-align:center; 
+font-size:18px; 
+} 
+input[type=text] { 
+ width: 200px; 
+ box-sizing: border-box; 
+ border: 2px solid #ccc; 
+ border-radius: 4px; 
+ font-size: 16px; 
+ background-color: white;  background-position: 10px 10px;   background-repeat: no-repeat;  padding: 12px 20px 12px 20px;   
+} 
+input[type=text]:focus { 
+ width: 20%; 
+}
+input[type=button] { 
+ background-color:blue; 
+ border: none; 
+ color: white; 
+ padding: 16px 32px; 
+ text-decoration: none; 
+ margin: 4px 2px; 
+ cursor: pointer; 
+} 
+</style> 
+</head> 
+<body bgcolor="lavenderblush"> 
+<center> 
+<h1><center>CGPA CALCULATOR</font></center></h1> <script language="JavaScript"> 
+function calculateGpa (form) { 
+ var gpa = form.gpa1.value; 
+ if (gpa == "S") { 
+ gpa = 5; 
+ } 
+ if (gpa == "A") { 
+ gpa = 4;
+ } 
+ if (gpa == "B") {  gpa = 3; 
+ } 
+ if (gpa == "C") {  gpa = 2; 
+ } 
+ if (gpa == "D") {  gpa = 1; 
+ } 
+ if (gpa == "s") {  gpa = 5; 
+ } 
+ if (gpa == "a") {  gpa = 4; 
+ } 
+ if (gpa == "b") {  gpa = 3; 
+ } 
+ if (gpa == "c") {  gpa = 2; 
+ } 
+ if (gpa == "d") {
+ gpa = 1; 
+ } 
+ document.getElementById("result1").innerHTML = gpa; 
+} 
+</script> 
+<body> 
+<form action="" id="it3503">Enter your grade in the form of a letter: <br><br> Course 1 grade:<br> 
+<input type="text" name="gpa1" value=""> 
+<input type="button" name="button" value="Calculate" onClick="calculateGpa(this.form)"> </form> 
+<div id="result1"></div> 
+<script language="JavaScript"> 
+function calculateGpa2 (form) { 
+ var gpa = form.gpa2.value; 
+ if (gpa == "S") { 
+ gpa = 5;
+ } 
+ if (gpa == "A") {  gpa = 4; 
+ } 
+ if (gpa == "B") {  gpa = 3; 
+ } 
+ if (gpa == "C") {  gpa = 2; 
+ } 
+ if (gpa == "D") {  gpa = 1; 
+ } 
+ if (gpa == "s") {  gpa = 5; 
+ } 
+ if (gpa == "a") {  gpa = 4; 
+ } 
+ if (gpa == "b") {  gpa = 3; 
+ } 
+ if (gpa == "c") {
+ gpa = 2; 
+ } 
+ if (gpa == "d") { 
+ gpa = 1; 
+ } 
+  
+ document.getElementById("result2").innerHTML = gpa; 
+} 
+</script> 
+<body> 
+<form action="" id="it4153">Course 2 grade: <br> 
+<input type="text" name="gpa2" value=""> 
+<input type="button" name="button" value="Calculate"onClick="calculateGpa2(this.form)"> </form> 
+<div id="result2"></div> 
+<script language="JavaScript">
+function calculateGpa3 (form) {  var gpa = form.gpa3.value; 
+ if (gpa == "S") { 
+ gpa = 5; 
+ } 
+ if (gpa == "A") { 
+ gpa = 4; 
+ } 
+ if (gpa == "B") { 
+ gpa = 3; 
+ } 
+ if (gpa == "C") { 
+ gpa = 2; 
+ } 
+ if (gpa == "D") { 
+ gpa = 1; 
+ } 
+ if (gpa == "s") { 
+ gpa = 5; 
+ } 
+ if (gpa == "a") { 
+ gpa = 4;
+ } 
+ if (gpa == "b") { 
+ gpa = 3; 
+ } 
+ if (gpa == "c") { 
+ gpa = 2; 
+ } 
+ if (gpa == "d") { 
+ gpa = 1; 
+ } 
+ document.getElementById("result3").innerHTML = gpa; 
+} 
+</script> 
+<body> 
+<form action="" id="it5443">Course 3 grade:<br> 
+<input type="text" name="gpa3" value=""> 
+<input type="button" name="button" value="Calculate"onClick="calculateGpa3(this.form)"> </form> 
+<div id="result3"></div>
+<script language="JavaScript"> function calculateGpa4(form) {  var gpa = form.gpa4.value;  if (gpa == "S") { 
+ gpa = 5; 
+ } 
+ if (gpa == "A") { 
+ gpa = 4; 
+ } 
+ if (gpa == "B") { 
+ gpa = 3; 
+ } 
+ if (gpa == "C") { 
+ gpa = 2; 
+ } 
+ if (gpa == "D") { 
+ gpa = 1; 
+ } 
+ if (gpa == "s") { 
+ gpa = 5; 
+ } 
+ if (gpa == "a") { 
+ gpa = 4;
+ } 
+ if (gpa == "b") { 
+ gpa = 3; 
+ } 
+ if (gpa == "c") { 
+ gpa = 2; 
+ } 
+ if (gpa == "d") { 
+ gpa = 1; 
+ } 
+ document.getElementById("result4").innerHTML = gpa; 
+} 
+</script> 
+<body> 
+<form action="" id="it5413">Course 4 grade:<br> 
+<input type="text" name="gpa4" value=""> 
+<input type="button" name="button" value="Calculate"onClick="calculateGpa4(this.form)">
+</form> 
+<div id="result4"></div>
+ 
+ 
+<br> 
+<input type="button" id="final" name="button" value="Calculate" onClick="calculate()"> 
+<div id="total"></div> 
+<a href="index.html"><button type="submit" class="btn btn-primary">Back</button></a>
+<br><br><br><br><br> <br><br><br><br><br><br> 
+<div id="result"></div> 
+</center> 
+<footer>
+	<div style="background-color: blue;">
+		<h3>
+			<p align="right">Poongothai M</p>
+			<p align="right">18ITR072</p></h3></div>
+</footer>
+
+</body> 
+</html> 
